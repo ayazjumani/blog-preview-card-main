@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree";
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blogContainer{
+    display: inline-block;
+    margin: 20px;
+}
+
+.blogContainer img{
+    border-radius: 10px;
+    width: 500px;
+}
+
+.category{
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bolder;
+    text-align: left;
+    width: 120px;
+    padding-left: 20px;
+    height: auto;
+}
+
+.category h4{
+    font-size: 20px;
+    font-weight: 400px;
+}
+
+.publishDate {
+    text-align: left;
+    width: 400px;
+    height: auto;
+}
+
+.publishDate h3{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.title{
+    text-align: left;
+    width: 500px;
+    height: auto;
+}
+
+.title h2{
+    font-size: 30px;
+}
+
+.description{
+    text-align: left;
+    width: 400px;
+    height: auto;
+}
+
+.description h3{
+    font-size: 20px;
+    font-weight: lighter;
+    color: hsl(0, 0%, 50%);
+}
+
+.author {
+    text-align: left;
+    display: flex;
+}
+
+.author img{
+    width: 50px;
+    height: 50px;
+}
+
+.author h4{
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+    margin: 5px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+//* Your existing CSS rules */
+
+/* Media query for screens with a maximum width of 375px (e.g., mobile devices) */
+@media (max-width: 375px) {
+    .container {
+        width: 90%; /* Adjust as needed */
+    }
+    .blogContainer img {
+        margin: 10px;
+        width: 100%; /* Ensure images scale properly */
+    }
+    .category h4,
+    .publishDate h3,
+    .title h2,
+    .description h3 {
+        font-size: 16px; /* Adjust font sizes for readability */
+    }
+    .author img {
+        width: 40px; /* Resize author images */
+        height: 40px;
+    }
+}
+
